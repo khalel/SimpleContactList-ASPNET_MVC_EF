@@ -23,3 +23,9 @@ C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleCon
 C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Web.WebPages.Razor.xml
 C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\obj\Debug\SimpleContactList.dll
 C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\obj\Debug\SimpleContactList.pdb
+C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Net.Http.Formatting.dll
+C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Web.Http.dll
+C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Web.Http.WebHost.dll
+C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Net.Http.Formatting.xml
+C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Web.Http.xml
+C:\__Files\Code Samples\ASP.Net MVC 4\SimpleContactList_ASPNET_MVC4_EF\SimpleContactList\bin\System.Web.Http.WebHost.xml
