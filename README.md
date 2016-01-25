@@ -13,4 +13,6 @@ Posted at my blog
 
 http://blog.erroldsanchez.com/simple-contact-list-utilizing-asp-net-mvc-and-entity-framework/
 
+See live demo here
 
+http://demo-simplecontactlist-aspnet-mvc-ef.erroldsanchez.com/
