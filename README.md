@@ -1,5 +1,5 @@
 # Simple Contact List
-# Utilizing Asp.Net MVC and Entity Framework
+## Utilizing Asp.Net MVC and Entity Framework
 
 I have created this simple web application called “Simple Contact List” to show the utilization of ASP.NET MVC and Entity Framework. This implements Code-First approach wherein it created the Database on the fly based on the Entity Classes and Configuration.
 
