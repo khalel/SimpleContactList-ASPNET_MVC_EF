@@ -7,10 +7,53 @@
 
 <h3>Utilizing Asp.Net MVC and Entity Framework</h3>
 
-<p>This simple web application is created to show my knowledge of Asp.Net MVC and Entity Framework.</p>
+<blockquote>
+    <p>Check the sample demo here: @Html.ActionLink("Show Contacts", "Index", "Contact", new { }, new { @class = "btn btn-primary" })</p>
+</blockquote>
 
-<p>Please feel free to re-use this for any purpose that you need it as long as you give me credits for the codes.</p>
+<blockquote>
+    <p>You can grab the files in <a href="https://github.com/khalel/SimpleContactList-ASPNET_MVC_EF/tree/develop" target="_blank">GitHub</a>.</p>
+</blockquote>
 
-<p>You can grab the files in Github.</p>
+<blockquote>
+    <p>This is also posted in <a href="http://blog.erroldsanchez.com/simple-contact-list-utilizing-asp-net-mvc-and-entity-framework/" target="_blank">my blog</a>.</p>
+</blockquote>
+
+<p>I have created this simple web application called “Simple Contact List” to show the utilization of ASP.NET MVC and Entity Framework. This implements Code-First approach wherein it created the Database on the fly based on the Entity Classes and Configuration.</p>
+
+<p>The .NET Entity Framework has come a long way since its early beginnings where it is currently in version 6.0 and this ORM (Object-Relational Mapping) is stable and mature.</p>
+
+<p>
+    Here are the workflows that you choose from when you want to use Entity Framework:
+</p>
+
+<ol>
+    <li>Code-First creating to a new database.</li>
+    <li>Code-First to an existing Database.</li>
+    <li>Model Designer creating to a new Database</li>
+    <li>Existing Database to Generated Model</li>
+</ol>
+
+<p>Usually the fourth item is most frequently used because it is the quickest to get an application up and running. You  can rapidly develop your Database design then generate the Code Model in just a few clicks.</p>
+
+<p>Now here are reasons you should use workflows 1 & 2:</p>
+
+<ol>
+    <li>
+        <u><strong>Less cruft, less bloat</strong></u>. 
+        In Code-First your Models become your Database meaning the Models that you build will generate the Database Design/Objects for you.
+    </li>
+    <li>
+        <u><strong>Greater Control</strong></u>. 
+        In Database-First approach there’s a pile of auto generated codes for your Models to be use in your application and usually the naming conventions are undesirable. There is also a chance that the relationships and associations are not what you want. 
+        <em><strong>In Code-First</strong></em> you can control every aspect of both your code Models and your Database Design/Objects from the comfort of your business logic/objects. You can also precisely specify relationships, constraints and associations.
+    </li>
+    <li>
+        <u><strong>Database Version Control</strong></u>. 
+        Creating a version for your Database is not hard (much more effective) with Code-First and Code-First Migrations because your Database Schema is fully based on your code Models.
+    </li>
+</ol>
+
+<p>Please feel free to re-use the web application for any purpose that you need it as long as you give me credits for the codes.</p>
 
 <h4>Cheers!</h4>
