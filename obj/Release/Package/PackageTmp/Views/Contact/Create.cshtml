@@ -1,0 +1,159 @@
+﻿@model SimpleContactList.Models.Contact
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_BootstrapLayout.cshtml";
+}
+
+@{
+   List<SelectListItem> liContactType = new List<SelectListItem>();
+   liContactType.Add(new SelectListItem { Text = "Personal", Value = "Personal" });
+   liContactType.Add(new SelectListItem { Text = "Business", Value = "Business" });
+
+   List<SelectListItem> liGender = new List<SelectListItem>();
+   liGender.Add(new SelectListItem { Text = "Male", Value = "Male" });
+   liGender.Add(new SelectListItem { Text = "Female", Value = "Female" });
+}
+
+<h2>Contact</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-default" })
+</div>
+
+<div class="well bs-component">
+@using (Html.BeginForm("Create", "Contact", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Create new contact</legend>
+        <div class="form-group">
+            <label for="ContactType" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.ContactType)
+            </label>
+            <div class="col-lg-10">
+                @Html.DropDownListFor(model => model.ContactType, liContactType, "-- Select --", new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.ContactType)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="LastName" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.LastName)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.LastName, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="FirstName" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.FirstName)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.FirstName, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="MiddleName" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.MiddleName)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.MiddleName, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.MiddleName)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Gender" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.Gender)
+            </label>
+            <div class="col-lg-10">
+                @Html.DropDownListFor(model => model.Gender, liGender, "-- Select --", new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.Gender)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="EmailAddress" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.EmailAddress)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.EmailAddress, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.EmailAddress)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Number" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.Number)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.Number, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.Number)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Address1" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.Address1)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.Address1, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.Address1)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Address2" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.Address2)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.Address2, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.Address2)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="City" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.City)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.City, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="State_Province_County" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.State_Province_County)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.State_Province_County, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.State_Province_County)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Country" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.Country)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.Country, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.Country)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Zipcode" class="col-lg-2 control-label">
+                @Html.LabelFor(model => model.Zipcode)
+            </label>
+            <div class="col-lg-10">
+                @Html.TextBoxFor(model => model.Zipcode, new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.Zipcode)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </fieldset>
+}
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
